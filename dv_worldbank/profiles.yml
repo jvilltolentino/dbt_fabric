@@ -1,0 +1,11 @@
+dv_worldbank:
+  target: dev
+  outputs:
+    dev:
+      type: fabric
+      driver: "ODBC Driver 18 for SQL Server"
+      server: "iusvhptj2vee5mxsbyanf2bkd4-3ejewlfose6ulmthfh27oyoake.datawarehouse.fabric.microsoft.com"
+      database: "dv_warehouse"
+      schema: "dbo"
+      authentication: "CLI"   # uses 'az login' on your machine
+      threads: 4
